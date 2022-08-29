@@ -1,0 +1,401 @@
+#include <stdio.h>
+int i,j,k,l,count=6,c=0,c1=11,c2=0,c3=11,c4=0,c5=11,a;
+void line(){printf("**");}
+void gap(){printf("   ");}
+void crosstr(){
+  for(j=10;j>=i;j--)
+  {printf(" ");}
+}
+void crosstl(){
+  for(j=10;j>=i;j--)
+  {printf(" ");}
+}
+void crossbr(){
+  for(j=1;j<=i;j++)
+  {printf(" ");}
+}
+void crossbl(){
+  for(j=1;j<=i;j++)
+  {printf(" ");}
+}
+void mida(){
+  for(l=0;l<=5;l++)
+  {if(i>4 && i<7 || i<2)
+   {printf("**");}
+   else {
+    printf("  ");
+  }
+ }
+}
+void midb(){
+  for(l=1;l<=5;l++){
+    if(i>=0 && i<2||i>4 && i<7||i>9 && i<=11)
+    {printf("**");} 
+     else {printf("  ");}
+  }
+  if(k==0){
+    if(i>=0 && i<2||i>4 && i<7||i>9 && i<=11)
+    {printf("  ");} 
+     else {printf("**");}
+  }
+}
+void midc(){
+  for(l=1;l<=5;l++){
+    if(i>=0 && i<2||i>9 && i<=11)
+  {printf("**");}
+  else {printf("  ");
+  }
+ }
+}
+void midh(){
+  for(l=1;l<=5;l++){
+    if(i>4 && i<7){
+      printf("**");
+    }
+    else {printf("  ");
+    }
+  }
+}
+void mide(){
+  for(l=1;l<=5;l++){
+    if(i>=0 && i<2||i>4 && i<7||i>9 && i<=11)
+    {printf("**");}
+    else {printf("  ");
+    }
+  }
+}
+void midd(){
+  for(l=1;l<=5;l++){
+    if(i>=0 && i<2||i>9 && i<=11)
+    {printf("**");}
+    else {
+      printf("  ");
+    }
+  }
+    if(i>=0 && i<2||i>9 && i<=11)
+    {printf("   ");}
+    else{printf("***");
+    }
+}
+void midf(){
+  for(l=1;l<=5;l++){
+    if(i>=0 && i<2||i>4 && i<7){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void midg(){
+  for(l=1;l<=5;l++){
+    if(i>=0 && i<2||i>4 && i<7 && l>=3 && l<=5||i>=6 && i<=9 && l==5||i>9 &&i<=11){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void spi(){
+  for(l=0;l<=6;l++){
+    if(i>=0 && i<2||i>=2 && i<=9 && l==3||i>9 && i<=11){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void spj(){
+  for(l=0;l<=6;l++){
+    if(i>=0 && i<2 || i>=2 && i<=9 && l==3|| i>=7 && i<=9 && l==0||i>9 && i<=11 && l<=3){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void midk(){
+ 
+  for(l=0;l<=6;l++)
+  {
+    if(l==count)
+    {
+      printf("**");
+    }
+    else
+    {
+      printf("  ");
+    }
+  }
+  
+}
+void midl()
+{
+  for(l=1;l<=5;l++)
+  {
+    if(i>9 && i<=11)
+    {
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void midv(){
+  for(j=10;j>=i;j--)
+  {
+    printf("  ");
+  }
+}
+void mido(){
+  for(k=0;k<=2;k++){
+    if(i==0 && k<2||i==1 && k<1|| i==11 && k<2||i==10 && k<1){
+      printf(" ");
+    }
+    else {
+      printf("*");
+    }
+  }
+  for(l=1;l<=6;l++){
+    if(i>=0 && i<2|| i>9 && i<=11){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+  for(k=0;k<=2;k++){
+    if(i==0 && k>0 || i==1 && k>1 || i==11 && k>0 || i==10 && k>1){
+      printf(" ");
+    }
+    else{
+      printf("*");
+    }
+  }
+}
+void midp(){
+  for(l=1;l<=5;l++){
+    if(i>=0 && i<2||i>4 && i<7||i>=2 &i<=4 && l==5){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void spq(){
+  for(l=0;l<7;l++){
+    if(i>=0 && i<2 && l<7||i>=2 && i<9 && l==0 || l==6 && i<10 || i>7 && i<=9 && l<7
+     || i>9 && i<=11 && l==2|| i==6 && l<3||i==7&&l==2){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void midr(){
+  
+  for(l=0;l<=5;l++){
+    if(i>=0 && i<2 || i>4 && i<7 || i>=2 && i<=4 && l==5 || i>=7 && i<=11 && l==c4){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void sps(){
+  for(l=1;l<=8;l++){
+    if(i>=0 && i<2 || i>4 && i<7 || i>=2 &i<=4 && l==1 || i>6 && i<=9 && l==8 || i>9 && i<=11){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+ }
+void spt(){
+  for(l=0;l<=6;l++){
+    if(i>=0 && i<2 || i>=2 && i<=11 && l==3){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void midu(){
+  for(l=1;l<=6;l++){
+    if(i>9 && i<=11){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void midw(){
+  for(j=1;j<=i;j++){
+    printf("  ");
+  }
+}
+void spx(){
+  for(l=0;l<=11;l++){
+    if(l==c || l==c1){
+      printf("**");
+    }
+    else{
+      printf("  ");
+    }
+  }
+}
+void spy(){
+  for(l=0;l<=11;l++){
+    if(l==c2 || l==c3){
+      printf("*");
+    }
+    else{
+      printf(" ");
+    }
+  }
+}
+void spz(){
+  for(l=0;l<=11;l++){
+    if(i==0 || i==11 || i>=0 && i<=11 && l==c5){
+      printf("*");
+    }
+    else{
+      printf(" ");
+    }
+  }
+}
+
+
+int main(){
+  char cc[100];
+  printf("*STAR PATTERN*\nMade By:- Param\n");
+  printf("\nEnter Any Word [lower case only]: \n");
+  fgets(cc,100,stdin);
+  
+  for(i=0;i<=11;i++){
+    for(a=0;cc[a]!=NULL;a++){
+      if(cc[a]=='a'){
+       line();mida();line();gap();
+      }
+      else if(cc[a]=='b'){
+        line();midb();gap();
+      }
+      else if(cc[a]=='c'){
+        line();midc();gap();
+      }
+      else if(cc[a]=='d'){
+        line();midd();gap();
+      }
+      else if(cc[a]=='e'){
+        line();mide();gap();
+      }
+      else if(cc[a]=='f'){
+        line();midf();gap();
+      }
+      else if(cc[a]=='g'){
+        line();midg();gap();
+      }
+      else if(cc[a]=='h'){
+        line();midh();line();gap();
+      }
+      else if(cc[a]=='i'){
+        spi();gap();
+      }
+      else if(cc[a]=='j'){
+        spj();gap();
+      }
+      else if(cc[a]=='k'){
+        line();midk();gap();
+      }
+      else if(cc[a]=='l'){
+        line();midl();gap();
+      }
+      else if(cc[a]=='m'){
+        line();crossbr();line();midv();line();crossbl();line();gap();
+      }
+      else if(cc[a]=='n'){
+        line();crossbr();line();crosstl();line();gap();
+      }
+      else if(cc[a]=='o'){
+        mido();gap();
+      }
+      else if(cc[a]=='p'){
+        line();midp();gap();
+      }
+      else if(cc[a]=='q'){
+        spq();gap();
+      }
+      else if(cc[a]=='r'){
+        line();midr();gap();
+      }
+      else if(cc[a]=='s'){
+        sps();gap();
+      }
+      else if(cc[a]=='t'){
+        spt();gap();
+      }
+      else if(cc[a]=='u'){
+        line();midu();line();gap();
+      }
+      else if(cc[a]=='v'){
+        crossbr();line();midv();line();crossbl();gap();
+      }
+      else if(cc[a]=='w'){
+        line();crosstr();line();midw();line();crosstl();line();gap();
+      }
+      else if(cc[a]=='x'){
+        spx();gap();
+      }
+      else if(cc[a]=='y'){
+        spy();gap();
+      }
+      else if(cc[a]=='z'){
+        spz();gap();
+      }
+      else if(cc[a]==' '){
+        gap();gap();gap();
+      }
+    }
+    if(i>=7){ //r
+      c4++;}
+      
+    c5--;     //z
+    
+    if(i<=5)
+  {           //k
+    count--;
+  }
+  else if(i<=11)
+  {
+    count++;
+  }
+  
+  if(i<=4){   //x
+    c++;
+    c1--;
+  }
+  else if(i<=11){
+    c1++;
+    c--;
+  }
+  
+  if(i<=4){   //y
+    c2++;
+    c3--;
+  }
+    printf("\n");
+  }
+  printf("-------------------------------------------\n Looping Successful");
+  
+  return 0;
+  }
